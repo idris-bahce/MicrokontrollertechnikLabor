@@ -1,8 +1,31 @@
 /*================ E23 == WiSe24/25 ==== LPr-Versuch 02 ==== Aufgabe 4
-Datum des LPr-Versuchs: 16/04/2016
-TN1: Bahce, Idris, 599518.
-TN2: Winkelmann, Aaron, 598866.
-Besonderheiten/Anmerkungen: 
+Aufgabe 4: Fußgängerampel mit Touchsensor
+ 5 LEDs (2*rot, 2*grün, 1*gelb) mit Vorwiderständen
+ 1 Touchsensor
+Wenden Sie Ihr Erlerntes aus den Aufgaben 2 und 3 systemaƟsch an und realisieren Sie nun eine
+erweiterte Ampellösung für Fahrzeuge und Fußgänger.
+Mit drei LEDs (rot, gelb und grün) und den jeweiligen Vorwiderständen soll auf einem breadboard
+eine Ampel für die Fahrbahn realisiert werden und mit zwei weiteren LEDs (rot, grün) eine Ampel für
+Fußgänger. Fußgänger sollen durch BetäƟgen eines Touchsensors die Grünphase für Fußgänger
+anfordern können.
+Die Wartezeit für Fußgänger nach der TouchsensorbetäƟgung soll 5 s betragen, Fahrbahnnutzer
+erhalten entsprechend Abb. 2 innerhalb dieser 5 s erst Gelb dann Rot.
+Nach einer definierten Zeitdauer von 10 Sekunden schaltet die Ampel für Fußgänger wieder auf Rot
+und die Fahrbahnampel über Rot/Gelb auf Grün (vergl. mit Abb. 2).
+a) Stecken Sie möglichst strukturiert eine geeignete Schaltung auf dem breadboard! Vergessen
+Sie die LED-Vorwiderstände nicht (a´ 220…470 ! Empfohlen werden drei 5 mm LEDs für die
+Fahrbahnampel und zwei 3 mm LEDs für die Fußgängerampel.
+b) Den Touchsensor schließen Sie wie gehabt an:
+ GND vom Touchsensor an GND vom µC-board
+ Vcc vom Touchsensor an 5 V vom µC-board
+ I/O vom Touchsensor an D2 vom µC-board
+c) Skizzieren Sie sich den zeitlichen Ablauf des Hauptprogramms (Erweiterung zu Abb.2) in
+einem Diagramm.
+d) Schreiben Sie vollumfänglich kommenƟerten Programmcode zur Lösung der Aufgabe.
+e) Laden Sie das Programm auf den µC und testen Sie die FunkƟonsfähigkeit Ihres Programms!
+f) Speichern Sie die finale Version Ihres Codes – zwingend mit Kommentarheaderblock – als
+g) Datei mit der Endung .txt, so dass es mit einem beliebigen Editor gelesen werden kann (kein
+*.ino, keine pdf o.ä.) 
 **************************************************************************
 **************************************************************************/
 //I/O für die Autos

@@ -1,8 +1,10 @@
-/*================ E23 == WiSe24/25 ==== LPr-Versuch 02 ==== Aufgabe 1
-Datum des LPr-Versuchs: 16/04/2016
-TN1: Bahce, Idris, 599518.
-TN2: Winkelmann, Aaron, 598866.
-Besonderheiten/Anmerkungen: 
+/*================ E23 == WiSe24/25 ==== LPr-Versuch 02 ==== Aufgabe 2
+Aufgabe 2: Taktung einer Ampel  3 LED (rot, gelb, grün) mit Vorwiderständen
+ Kein Taster o.ä.
+Mit drei LEDs (rot, gelb und grün) und den jeweiligen Vorwiderständen soll auf einem breadboard
+eine Ampel gesteckt werden.
+Das Mikrocontrollerboard mit einem ATmega328 soll unter Verwendung der Arduino IDE derart
+programmiert werden, das die Ampel fortlaufend der Ampeltaktung entsprechend Abbildung 1 folgt:
 **************************************************************************
 **************************************************************************/
 

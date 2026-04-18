@@ -1,8 +1,22 @@
 /*================ E23 == WiSe24/25 ==== LPr-Versuch 02 ==== Aufgabe 3
-Datum des LPr-Versuchs: 16/04/2016
-TN1: Bahce, Idris, 599518.
-TN2: Winkelmann, Aaron, 598866.
-Besonderheiten/Anmerkungen: 
+Aufgabe 3: Touchsensor-Abfrage 
+ 1 LED mit Vorwiderstand
+ 1 Touchsensor
+In Abhängigkeit von BerührungsakƟvitäten an einem kapaziƟven Touchsensor soll eine LED mit der
+ersten Berührung angeschaltet werden, mit der zweiten Berührung ausgeschaltet werden und so fort.
+Wird der Touchsensor nicht betäƟgt, soll die LED im jeweils letzten Zustand verharren.
+Ihr code muss feststellen ob die LED gerade an- oder ausgeschaltet ist. Empfohlen wird diesbezüglich
+eine Variable vom Typ bool zu definieren und zu nutzen.
+a) Stecken Sie möglichst strukturiert eine geeignete Schaltung auf dem breadboard! Vergessen Sie
+den LED-Vorwiderstand nicht (a´ 220…470 ! 
+ GND vom Touchsensor an GND vom µC-board
+ Vcc vom Touchsensor an 5 V vom µC-board
+ I/O vom Touchsensor an D2 vom µC-board
+b) Schreiben Sie vollumfänglich kommenƟerten Programmcode zur Lösung der Aufgabe.
+c) Laden Sie das Programm auf den µC und testen Sie die FunkƟonsfähigkeit Ihres Programms!
+d) Speichern Sie die finale Version Ihres Codes – zwingend mit Kommentarheaderblock – als
+Datei mit der Endung .txt, so dass es mit einem beliebigen Editor gelesen werden kann (kein
+*.ino, keine pdf o.ä.) 
 **************************************************************************
 **************************************************************************/
 
