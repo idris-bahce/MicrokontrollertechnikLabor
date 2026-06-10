@@ -16,11 +16,13 @@ int pwmBlau = 0;
 // Digitales Input mit Taster für den Würfel Wurf
 // Achtung: Es ist einen Pull Down Taster
 int taster = 2;
+// Variable für die Flankenauswertung (Gedächtnis für den Taster)
+int letzterTasterZustand = LOW;
 
 //Schreib die Anfang Zeit
 unsigned long startTime = millis();
 //Prellen Zeit 150ms
-int prellen = 150;
+int prellen = 400;
 
 //Ausgabe
 String ausgabe = "";
@@ -44,8 +46,11 @@ void setup() {
 }
 
 void loop() {
+  // Aktuellen Tasterzustand einlesen
+  int aktuellerZustand = digitalRead(taster);
+
   //Generiert ganze Zahl von 1 bis 6
-  if (millis() - startTime >= prellen && digitalRead(taster) == HIGH) {
+  if (millis() - startTime >= prellen && (aktuellerZustand == HIGH) && (letzterTasterZustand == LOW)) {
     startTime = millis();
     int zahl = random(1, 7);
     //Switch case für den Würfel
@@ -108,4 +113,6 @@ void loop() {
     analogWrite(LEDblau, outBlau);
     Serial.println(ausgabe);
   }
+  // Am Ende der Schleife den aktuellen Zustand für den nächsten Durchlauf merken
+  letzterTasterZustand = aktuellerZustand;
 }
