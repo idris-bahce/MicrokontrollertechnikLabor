@@ -1,8 +1,21 @@
 /*================ E23 == Sose25/26 ==== LPr-Versuch 05 ==== Aufgabe 1f
-Datum des LPr-Versuchs: 11/06/2026
-TN1: Bahce, Idris, 599518.
-TN2: Winkelmann, Aaron, 598866.
-Besonderheiten/Anmerkungen: 
+Jetzt sind Sie aufgefordert die gleiche ProgrammfunkƟonalität unter Verwendung eines
+eindimensionalen Arrays zu bewirken.
+ Dazu müssen Sie – unter Beachtung der entsprechenden Syntax – den relevanten
+Inhalt aus dem zweidimensionalen Array in ein eindimensionales Array transferieren.
+Die Segmente die für die Ziffern anzusteuern sind, werden als BitkombinaƟon im
+eindimensionalen Array in Bytes binärcodiert abgelegt, gekennzeichnet durch ein
+vorangestelltes B:
+z.B. B01111110 für 0, B00110000 für 1 usw. [vergl. mit Tab. 1].
+[Hinweis: Es werden ohne Dot notwendigerweise nur 7 Bits zur Ansteuerung benöƟgt, daraus erklärt sich die 0 für
+das MSB.]
+ Ferner muss die for-Schleife zum Abfragen der Bits, zugehörig zu einer ausgewählten
+Ziffer, angepasst werden.
+ Nutzen Sie die bitRead()-FunkƟon zur Abfrage einzelner Bits in einem Byte und setzen
+Sie in Abhängigkeit vom Rückgabewert dieser FunkƟon einzelne Segmente auf HIGH
+oder LOW.
+Laden Sie Ihren Code auf den µC und testen Sie Ihre Lösung! Speichern Sie Ihre finale Version
+zu (f) zur späteren Verwendung ab unter: IhrNachname_OneDigit02f.txt (alle TN individuell)! 
 **************************************************************************
 **************************************************************************/
 const byte lengtPinArray = 7;
